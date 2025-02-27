@@ -1,0 +1,225 @@
+/* Projects Page */
+
+.projects{
+    height: 90vh;
+    width: 100vw;
+    background-color: #000000;
+  }
+  
+  .projects-heading{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projects {
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #000000;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 16px 0px 16px;
+    overflow: auto; /* Scrollable to prevent overlapping */
+    max-height: 65vh;
+  }
+  
+  .project {
+    width: 23%; /* 4 per row */
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 24px;
+    border: 2px solid #005a87;
+    text-align: left;
+    color: #3BBEFF;
+    transition: transform 0.3s ease;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+    border: 2px solid #3bbeff;
+    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
+  }
+  
+  .project img {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: scale-down;
+  }
+  
+  .project-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 8px 0;
+  }
+  
+  .project-desc {
+    font-size: 0.75rem;
+    color: #c0c0c0;
+    max-height: 4.2em; /* Limits to 2 lines (1.4em per line) */
+    line-height: 1.4em; /* Adjust line spacing */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    display: -webkit-box;/* Limits to 2 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  .project-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    border: 2px solid #005a87;
+    background-color: #000000;
+    color: #3BBEFF;
+  }
+  
+  .btn-primary:hover {
+    border: 2px solid #ffffff;
+    background-color: #3BBEFF;
+    color: #ffffff;
+    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
+    transition:  0.3s ease;
+  }
+  
+  .btn-secondary {
+    border: 2px solid #005a87;
+    background-color: #000000;
+    color: #3BBEFF;
+  }
+  
+  .btn-secondary:hover {
+    border: 2px solid #ffffff;
+    background-color: #3BBEFF;
+    color: #ffffff;
+    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
+    transition:  0.3s ease;
+  }
+  
+  .btn {
+    display: block;
+    margin: 24px auto 0px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: #000000;
+    color: #3bbeff;
+    border-radius: 25px;
+    border: none;
+    transition: background-color 0.3s ease;
+    box-shadow:  2px 2px 16px #005680, -2px -2px 16px #005f8e;
+    transition:  0.3s ease;
+  }
+  
+  .btn:hover {
+  
+    color: #ffffff;
+    background-color: #3bbeff;
+    transition-duration: 0.3s;
+    box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
+  }
+  
+  /* Width and background of the scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px; /* Adjust scrollbar width */
+  }
+  
+  /* Track (the background of the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #005a87; /* Dark background */
+    border-radius: 0px;
+  }
+  
+  /* Handle (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #3BBEFF; /* Blue handle */
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3BBEFF; /* Lighter blue on hover */
+  }
+  
+  
+  
+  @media screen and (max-width: 480px) {
+  
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  
+    body {
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* Internet Explorer/Edge */
+    }
+  
+    .projects{
+      width: 100vw;
+      height: auto;
+      padding: 0px;
+      margin: 0px;
+    }
+  
+    .container{
+      height: auto;
+      margin: 0px;
+      padding: 0px 16px;
+    }
+  
+    .projects-grid {
+      height: 50vh;   
+      width: 100%; 
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      gap: 2rem;
+      padding: 0px 24px;
+    }
+  
+    .project {
+      width: 90%;
+    }
+
+    .project-title{
+      font-size: 1.25rem;
+    }
+
+    .project-desc{
+      font-size: 1rem;
+    }
+  
+    #toggleProjects {
+      display: block;
+      margin: 1rem auto 3rem; 
+    }
+  }
+  

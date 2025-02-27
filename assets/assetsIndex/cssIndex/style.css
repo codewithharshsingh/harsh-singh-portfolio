@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10vh;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #3bbeff;
+  overflow-x: hidden;
+  background-color: #000000;
+  animation: fadeIn 1s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Smooth scrolling effect for sections */
+section {
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button Enhancements */
+button {
+  padding: 10px 20px;
+  background-color: #3bbeff;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #1a8cd8;
+  transform: scale(1);
+}
+
+/* Smooth fade-in animation on page load */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Scroll-to-Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #000000;
+  color: #3bbeff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 20px #3BBEFF, 0 0 20px #3BBEFF;
+}
+
+/* Hover Effect */
+.scroll-top:hover {
+color: #ffffff;
+background-color: #3BBEFF;
+box-shadow:  0 0 20px #005680, 0 0 20px #005f8e;
+transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .scroll-top{
+    margin-bottom: 2rem;
+  }
+}

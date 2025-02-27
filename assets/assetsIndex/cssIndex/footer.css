@@ -1,0 +1,77 @@
+/* Footer Styling */
+
+
+.footer {
+    background-color: #000; /* Dark background */
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Copyright Text */
+  .copyright {
+    color: #ffffff; /* Silver text */
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .copyright span {
+    color: #3BBEFF; /* Neon Blue for your name */
+    font-weight: 600;
+  }
+  
+  .copyright a{
+    text-decoration: none;
+    color: #3BBEFF; 
+  }
+  
+/* Scroll-to-Top Button */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: #000000;
+  color: #3bbeff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 20px #3BBEFF, 0 0 20px #3BBEFF;
+}
+
+/* Hover Effect */
+.scroll-top:hover {
+color: #ffffff;
+background-color: #3BBEFF;
+box-shadow:  0 0 20px #005680, 0 0 20px #005f8e;
+transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    height: auto;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .footer p {
+    font-size: 1rem;
+  }
+
+  .scroll-top{
+    margin-bottom: 3rem;
+  }
+}
