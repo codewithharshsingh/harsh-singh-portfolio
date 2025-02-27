@@ -261,3 +261,32 @@
     }
   }
   
+
+  @media screen and (max-width: 375px){
+    
+
+  
+    .skill-text h2{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      font-size: 1.25rem;
+    }
+  
+    .skill-text p{
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      font-weight: normal;
+    }
+
+
+    .skills-names div{
+      font-size: 1rem;
+    }
+
+    .skills-icon i{
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -215,3 +215,50 @@
     }
   }
 
+
+
+
+  @media (max-width: 375px) {
+
+    .home{
+      height: auto;
+      width: 100vw;
+      padding: 0px 0px 16px;
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home-image-bg-up {
+      width: 50%;
+      height: auto;
+      object-fit: cover;
+      overflow: hidden;
+      background-color: #c0c0c0;
+      border-radius: 38% 62% 38% 62% / 57% 43% 57% 43%;
+    }
+  
+    .home-intro p{
+      font-size: 1.75rem;
+      text-align: left;
+    }
+  
+    .home-intro p span{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  
+    .home-intro #typing-effect{
+      font-size: 1.75rem;
+      margin: 0px;
+    }
+
+    .contact-button {
+      margin: 0px;
+    }
+
+    .contact-button a{
+      font-size: 1.25rem;
+      margin: 0px;
+    }
+  }

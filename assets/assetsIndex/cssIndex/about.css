@@ -184,3 +184,36 @@
     }
   }
   
+
+  @media screen and (max-width: 375px){
+    .about{
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .about-paragraph p{
+      font-size: 1rem;
+    }
+  
+    .about-info p{
+      font-size: 1rem;
+      margin: 0px;
+    }
+  
+    .about-info p strong{
+      font-size: 1rem;
+      margin: 0px;
+    }
+  
+    .resume-button{
+      margin: 3rem 0;
+      justify-content: center;
+    }
+
+    .resume-button a{
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+  }
+  
