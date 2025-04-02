@@ -137,6 +137,34 @@
     border-radius: 2rem;
     box-shadow: 5px 5px 25px #32a2d9, -5px -5px 25px #44dbff;
   }
+
+  @media screen and (max-width: 375px){
+    
+
+  
+    .skill-text h2{
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      font-size: 1.25rem;
+    }
+  
+    .skill-text p{
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      font-weight: normal;
+    }
+
+
+    .skills-names div{
+      font-size: 1rem;
+    }
+
+    .skills-icon i{
+      font-size: 1.5rem;
+    }
+  }
   
   @media screen and (max-width: 480px){
     .skills{
@@ -260,33 +288,3 @@
       font-size: 2rem;
     }
   }
-  
-
-  @media screen and (max-width: 375px){
-    
-
-  
-    .skill-text h2{
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
-      font-size: 1.25rem;
-    }
-  
-    .skill-text p{
-      width: 100%;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      font-weight: normal;
-    }
-
-
-    .skills-names div{
-      font-size: 1rem;
-    }
-
-    .skills-icon i{
-      font-size: 1.5rem;
-    }
-  }
-  
