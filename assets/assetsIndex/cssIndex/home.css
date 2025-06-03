@@ -79,7 +79,7 @@
     box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
   }
   
-  .contact-button:hover{
+  .contact-button a:hover{
     color: #ffffff;
     background-color: #3BBEFF;
     transition-duration: 0.5s;
@@ -141,8 +141,10 @@
     }
   
     .home-image-up {
+      width: 100vw;
+      height: 40vh;
       margin-top: 10vh;
-      padding: 2rem 0rem;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -176,17 +178,17 @@
     }
   
     .home-intro p{
-      font-size: 2.25rem;
+      font-size: 2rem;
       text-align: left;
     }
   
     .home-intro p span{
-      font-size: 3rem;
+      font-size: 2.25rem;
       font-weight: bold;
     }
   
     .home-intro #typing-effect{
-      font-size: 2.25rem;
+      font-size: 2rem;
       margin: 0px;
     }
   
@@ -195,6 +197,7 @@
     }
   
     .contact-button{
+      margin: 0px;
       display: flex;
       justify-content: center;
     }
@@ -204,14 +207,14 @@
     }
   
     .home-social{
-      margin-top: 5rem;
+      margin-top: 4rem;
       align-items: center;
       text-align: center;
     }
   
     .home-social a{
-      font-size: 1.5rem;
-      margin: 2rem;
+      font-size: 1.3rem;
+      margin: 1rem;
     }
   }
 

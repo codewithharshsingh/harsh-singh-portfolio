@@ -95,7 +95,7 @@
     box-shadow:  2px 2px 25px #005680, -2px -2px 25px #005f8e;
   }
   
-  .resume-button:hover {
+  .resume-button a:hover {
     color: #ffffff;
     background-color: #3BBEFF;
     transition-duration: 0.5s;
